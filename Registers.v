@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-//Register bank of 32bit 32 values
+
 module Registers(clk,write_data,rs1, rs2, rd, reg_write,reset, reg_readrs1, reg_read_rs2);
 
 input clk;
@@ -13,16 +13,6 @@ output reg[31:0] reg_readrs1;
 output reg[31:0] reg_read_rs2;
 
 reg [31:0] register_memory [31:0];
-
-
-//wire [7:0] opcode;
-
-//assign rs2 = Instruction[24:20];
-//assign rs1 = Instruction[19:15];
-//assign rd = Instruction[11:7];
-//assign opcode = Instruction[6:0];
-
-
 
 
 always @(reset==1'b1)
@@ -54,7 +44,7 @@ always @(reset==1'b1)
          register_memory[23] = 32'h23;
          register_memory[24] = 32'h24;
          register_memory[25] = 32'h25;
-		 register_memory[26] = 32'h26;
+	 register_memory[26] = 32'h26;
          register_memory[27] = 32'h27;
          register_memory[28] = 32'h28;
          register_memory[29] = 32'h29;
