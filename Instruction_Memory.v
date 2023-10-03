@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //Instruction Memory holds the instructions and are fetched by processor based on Program Counter
-//Each Instruction is stored as 4 8bit values = 32 bit
+ //Each Instruction is stored as 4 8bit values = 32 bit
 
 module Instruction_Memory(reset,PC, Instruction);
 
