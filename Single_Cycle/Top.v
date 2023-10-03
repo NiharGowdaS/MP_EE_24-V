@@ -1,4 +1,4 @@
-/*Single cycle  RISC-V processor with all types of instruction formats
+ /*Single cycle  RISC-V processor with all types of instruction formats
 R-type, I -type, S - type,B-type, U-type, J-type*/
 `timescale 1ns / 1ps
 
