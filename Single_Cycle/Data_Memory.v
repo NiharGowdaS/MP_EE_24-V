@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-//External memory of the processor to store values
+ //External memory of the processor to store values
 module Data_Memory
 (reset,clk,mem_address, mem_write_data, mem_read_data,mem_write);
     input reset;
