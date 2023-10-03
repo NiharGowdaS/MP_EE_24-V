@@ -1,6 +1,5 @@
-# Single-cycle-RISCV-processor
-
-Verilog code for a 32-bit  Single Cycle RISC-V processor (RV32I) processor.
+# RISCV-CPU
+## This repository is for the 7th semester Major Project at NITK Surathkal.
 
 The project is implemented using Vivado software
 
