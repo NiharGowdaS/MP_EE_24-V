@@ -9,7 +9,7 @@ module Data_Memory
     output reg [31:0] mem_read_data=0;
     input  mem_write;
    // input mem_read ;
-   
+    
     
     reg [31:0] mem_data [31:0];
     
