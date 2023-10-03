@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module Datapath(clk, reset,instruction, alu_control, reg_write, branch, AluSrc, alu_result0, PC, mem_reg, mem_read_data, reg_read_rs2,isJump);
+ module Datapath(clk, reset,instruction, alu_control, reg_write, branch, AluSrc, alu_result0, PC, mem_reg, mem_read_data, reg_read_rs2,isJump);
     
     input clk;
     input reset;
