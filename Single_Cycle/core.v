@@ -1,4 +1,4 @@
-//RV32I based processor with all instruction format is implemented with datapath and control path modules
+ //RV32I based processor with all instruction format is implemented with datapath and control path modules
 `timescale 1ns / 1ps
 
 module core(clk, reset, instruction, PC, alu_result, mem_write,mem_read_data,mem_write_data  );
