@@ -1,6 +1,6 @@
 # Single-cycle-RISCV-processor
 
-Verilog code for a 32-bit pipelined Single Cycle RISC-V processor (RV32I) processor.
+Verilog code for a 32-bit  Single Cycle RISC-V processor (RV32I) processor.
 
 The project is implemented using Vivado software
 
