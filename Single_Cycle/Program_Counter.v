@@ -1,5 +1,5 @@
 //Program Counter updates by 4 (in most of conditions) as each instruction is of 32 bit
-//In RISC-V we can access do byte access , half-word accesss (which I've not implemented here)
+ //In RISC-V we can access do byte access , half-word accesss (which I've not implemented here)
 `timescale 1ns / 1ps
 
 module Program_Counter(clk, reset, PC, PCSrc, immext,isJump);
