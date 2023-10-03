@@ -23,6 +23,7 @@ module tb ();
         clk = 0;
         forever #10 clk = ~clk;
     end
+    
 
     initial
     #300 $finish;
