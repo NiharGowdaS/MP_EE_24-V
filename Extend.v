@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-//unit is used for extend the immediate value for different intruction foramts
+ //unit is used for extend the immediate value for different intruction foramts
 
 
 module Extend(instr, imm_ext);
