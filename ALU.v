@@ -16,7 +16,7 @@ ALU Control lines | Function
         0101    Shift right logical
         0110    Multiply
         0111    Bitwise-XOR
-*/
+ */
 
 module ALU (in1, in2, alu_control, alu_result, zero_flag);
     input [31:0] in1,in2;
