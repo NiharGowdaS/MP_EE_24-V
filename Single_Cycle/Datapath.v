@@ -19,7 +19,7 @@
     
 
 wire zero_flag;
-//wire [11:0] branch_offset;
+ //wire [11:0] branch_offset;
 wire [31:0] Prg_Cntr;
 wire [31:0] alu_result;
 wire PCSrc;    
