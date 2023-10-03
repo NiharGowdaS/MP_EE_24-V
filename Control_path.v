@@ -7,7 +7,7 @@ AluSrc,mem_write,mem_reg,branch,isJump);
  output reg regwrite_control;
  output reg AluSrc;
  output reg mem_write;
-// output reg mem_read;
+ // output reg mem_read;
  output reg mem_reg;
  output reg isJump;
  output reg branch;
