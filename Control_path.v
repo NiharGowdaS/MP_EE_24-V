@@ -44,7 +44,7 @@ AluSrc,mem_write,mem_reg,branch,isJump);
                   7'b0010011:  // Arithmetic Immediate Instructions
            begin
             AluSrc = 1;
-          //  mem_read = 0;
+           //  mem_read = 0;
             mem_reg = 0;
             mem_write = 0;
             regwrite_control = 1;
