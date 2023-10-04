@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module Registers(clk,write_data,rs1, rs2, rd, reg_write, reg_read_rs1, reg_read_rs2);
-
+ 
 input clk;
 input [31:0] write_data;
 input [4:0] rs1;
