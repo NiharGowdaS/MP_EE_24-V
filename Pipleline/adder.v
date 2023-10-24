@@ -1,0 +1,6 @@
+module adder(a, b, y);
+
+input [31:0] a, b;
+output [31:0] y;
+	assign y = $signed(a) + $signed(b);
+endmodule
