@@ -1,4 +1,4 @@
-# 32-Bit RISC-V processor with I,M and F extensions. 
+# MP_EE_24-V : An Application Based 32-Bit RISC-V processor with I,M and F extensions. 
 
 This is a 5 stage pipelined RISC-V processor that supports the entire Integer instruction set along with some floating point instructions, most specifically the computational and load/store instructions.
 
