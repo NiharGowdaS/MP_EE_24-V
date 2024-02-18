@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../RV32IM.ip_user_files/ip/blk_memory/sim/blk_memory.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/ALU.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/C_EX_MEM.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/C_ID_EX.v" \
+"../../../../RV32IM.srcs/sources_1/new/C_IF_ID.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/C_MEM_WB.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/Control_path.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/Data_path.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/EX_MEM.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/Extend.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/Hazard_detection.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/ID_EX.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/IF_ID.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v" \
+"../../../../RV32IM.srcs/sources_1/new/Instruction_mem.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/MEM_WB.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/Registers.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/Top.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/mux2.v" \
+"../../../../RV32IM.srcs/sources_1/imports/RV32I/mux3.v" \
+"../../../../RV32IM.srcs/sim_1/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
