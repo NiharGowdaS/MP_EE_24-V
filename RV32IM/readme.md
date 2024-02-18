@@ -4,4 +4,4 @@
 
 Note : Directly run the  _RV32IM.xpr_ directly on Vivado 2023.1
 
-This project is synthesizable. It includes IP blocks for Data and Instruction memory, with initialization.
+This project is synthesizable. It includes IP blocks for Data and Instruction memory, with initialization/
