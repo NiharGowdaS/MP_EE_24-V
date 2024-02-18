@@ -1,0 +1,351 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Feb 18 02:29:39 2024
+# Process ID: 14196
+# Current directory: D:/RV32IM/RV32IM.runs/synth_1
+# Command line: vivado.exe -log RISC_V_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISC_V_core.tcl
+# Log file: D:/RV32IM/RV32IM.runs/synth_1/RISC_V_core.vds
+# Journal file: D:/RV32IM/RV32IM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RISC_V_core.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1116.078 ; gain = 0.000
+Command: synth_design -top RISC_V_core -part xc7a35ticpg236-1L -gated_clock_conversion on -fsm_extraction one_hot
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10476
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC_V_core' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Data_path' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:3]
+WARNING: [Synth 8-6104] Input port 'Rs1D' has an internal driver [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:43]
+WARNING: [Synth 8-6104] Input port 'Rs2D' has an internal driver [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:44]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/mux2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (1#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/mux2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/IF_ID.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (2#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/IF_ID.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/ID_EX.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (3#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/ID_EX.v:2]
+WARNING: [Synth 8-6104] Input port 'RdE' has an internal driver [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:52]
+WARNING: [Synth 8-6104] Input port 'Rs1E' has an internal driver [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:52]
+WARNING: [Synth 8-6104] Input port 'Rs2E' has an internal driver [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:52]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/EX_MEM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (4#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/EX_MEM.v:3]
+WARNING: [Synth 8-6104] Input port 'RdM' has an internal driver [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:55]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/MEM_WB.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (5#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/MEM_WB.v:2]
+WARNING: [Synth 8-6104] Input port 'RdW' has an internal driver [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:56]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/ALU.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (6#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/ALU.v:21]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/mux3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (7#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/mux3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Registers' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Registers.v:3]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Registers.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'Registers' (8#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Registers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Extend.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (9#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Extend.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Data_path' (10#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Control_path' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Control_path.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Instr_Decode' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v:4]
+INFO: [Synth 8-226] default block is never used [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v:51]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'Instr_Decode' (11#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v:4]
+INFO: [Synth 8-6157] synthesizing module 'C_ID_EX' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_ID_EX.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'C_ID_EX' (12#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_ID_EX.v:4]
+INFO: [Synth 8-6157] synthesizing module 'C_EX_MEM' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_EX_MEM.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'C_EX_MEM' (13#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_EX_MEM.v:6]
+INFO: [Synth 8-6157] synthesizing module 'C_MEM_WB' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_MEM_WB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'C_MEM_WB' (14#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_MEM_WB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Control_path' (15#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Control_path.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_detection' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Hazard_detection.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_detection' (16#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Hazard_detection.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RISC_V_core' (17#1) [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:8]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+WARNING: [Synth 8-327] inferring latch for variable 'alu_control_reg' [D:/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v:34]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 15    
+	                5 Bit    Registers := 7     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 12    
+	  12 Input   32 Bit        Muxes := 1     
+	   8 Input    5 Bit        Muxes := 2     
+	   9 Input    5 Bit        Muxes := 1     
+	  18 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   8 Input    1 Bit        Muxes := 3     
+	   9 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP alu_result0, operation Mode is: A*B.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: Generating DSP alu_result0, operation Mode is: A*B.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: Generating DSP alu_result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------------------+-----------+----------------------+--------------+
+|RISC_V_core | DATAPATH/REG/register_memory_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+----------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------------------+-----------+----------------------+--------------+
+|RISC_V_core | DATAPATH/REG/register_memory_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+----------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Gated Clock Conversion
+---------------------------------------------------------------------------------
+Gated Clock Conversion mode: on
+Starting Gated Clock analysis for module 'RISC_V_core'
+[INFO] Found 2 combinational gated clocks in this module ('RISC_V_core')
+End Gated Clock analysis for module 'RISC_V_core'
+-----------------------------------------------
+
+Report Gated Clocks: 
++-+---------------------+-----------+------------+---------+--------+--------+------+
+| |Gated Clock net name |Clock Name |Gating Type |#FF/SRLs |#RAMs_A |#RAMs_B |#DSPs |
++-+---------------------+-----------+------------+---------+--------+--------+------+
++-+---------------------+-----------+------------+---------+--------+--------+------+
+---------------------------------------------------------------------------------
+End Gated Clock Conversion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:47 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:47 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|RISC_V_core | DATAPATH/pipereg3/PCPlus4W_reg[31] | 4      | 31    | YES          | NO                 | YES               | 31     | 0       | 
++------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   624|
+|3     |DSP48E1  |     3|
+|4     |LUT1     |    33|
+|5     |LUT2     |   265|
+|6     |LUT3     |  2062|
+|7     |LUT4     |   124|
+|8     |LUT5     |   227|
+|9     |LUT6     |   504|
+|10    |RAM32M   |    10|
+|11    |RAM32X1D |     4|
+|12    |SRL16E   |    31|
+|13    |FDCE     |   425|
+|14    |FDRE     |    36|
+|15    |LD       |     5|
+|16    |IBUF     |    66|
+|17    |OBUF     |    97|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------+-------------+------+
+|      |Instance      |Module       |Cells |
++------+--------------+-------------+------+
+|1     |top           |             |  4517|
+|2     |  CONTROLPATH |Control_path |   194|
+|3     |    c_pipreg0 |C_ID_EX      |    19|
+|4     |    c_pipreg1 |C_EX_MEM     |     4|
+|5     |    c_pipreg2 |C_MEM_WB     |    54|
+|6     |    decoder   |Instr_Decode |    24|
+|7     |  DATAPATH    |Data_path    |  4159|
+|8     |    REG       |Registers    |    15|
+|9     |    alu_logic |ALU          |  2747|
+|10    |    pipereg0  |IF_ID        |    89|
+|11    |    pipereg2  |EX_MEM       |   136|
+|12    |    pipereg3  |MEM_WB       |   137|
+|13    |    pipreg1   |ID_EX        |   984|
++------+--------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1116.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1116.078 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1116.078 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1116.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 646 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1116.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  LD => LDCE: 5 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+
+Synth Design complete, checksum: 3ce1f46c
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 1116.078 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/RV32IM/RV32IM.runs/synth_1/RISC_V_core.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RISC_V_core_utilization_synth.rpt -pb RISC_V_core_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 18 02:31:02 2024...

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35ticpg236-1L" LaunchTime="1708203570">
+  <File Type="PA-TCL" Name="RISC_V_core.tcl"/>
+  <File Type="REPORTS-TCL" Name="RISC_V_core_reports.tcl"/>
+  <File Type="RDS-RDS" Name="RISC_V_core.vds"/>
+  <File Type="RDS-DCP" Name="RISC_V_core.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/ALU.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/C_EX_MEM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/C_EX_MEM.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/C_ID_EX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/C_ID_EX.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/C_MEM_WB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/C_MEM_WB.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/Control_path.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/Control_path.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/Data_path.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/Data_path.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/EX_MEM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/EX_MEM.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/Extend.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/Extend.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/Hazard_detection.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/Hazard_detection.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/ID_EX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/ID_EX.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/IF_ID.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/IF_ID.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/Instr_Decode.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/Instr_Decode.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/MEM_WB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/MEM_WB.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/Registers.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/Registers.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/mux2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/mux2.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/mux3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/mux3.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/RISC_V_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/RISC_V_core.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32IF/Addition_Subtraction.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/MP_EE_24-V-main/MP_EE_24-V-main/RV32IF/Addition_Subtraction.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32IF/Calculation_module.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/MP_EE_24-V-main/MP_EE_24-V-main/RV32IF/Calculation_module.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32IF/Division.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/MP_EE_24-V-main/MP_EE_24-V-main/RV32IF/Division.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32IF/FPU.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/MP_EE_24-V-main/MP_EE_24-V-main/RV32IF/FPU.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32IF/Iteration.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/MP_EE_24-V-main/MP_EE_24-V-main/RV32IF/Iteration.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32IF/Multiplication.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/MP_EE_24-V-main/MP_EE_24-V-main/RV32IF/Multiplication.v"/>
+        <Attr Name="ImportTime" Val="1707574712"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32IF/Priority_encoder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/MP_EE_24-V-main/MP_EE_24-V-main/RV32IF/Priority_encoder.v"/>
+        <Attr Name="ImportTime" Val="1707574712"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/Data_Memory.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/Data_Memory.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/Instruction_Memory.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/Instruction_Memory.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32I/Top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/RV32I/Top.v"/>
+        <Attr Name="ImportTime" Val="1707574711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RV32IF/adder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Nihar Gowda/OneDrive/Desktop/MP_EE_24-V-main/MP_EE_24-V-main/RV32IF/adder.v"/>
+        <Attr Name="ImportTime" Val="1707574712"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="RISC_V_core"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <Step Id="synth_design">
+      <Option Id="GatedClockConversion">1</Option>
+      <Option Id="FsmExtraction">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

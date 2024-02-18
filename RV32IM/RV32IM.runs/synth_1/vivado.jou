@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Feb 18 02:29:39 2024
+# Process ID: 14196
+# Current directory: D:/RV32IM/RV32IM.runs/synth_1
+# Command line: vivado.exe -log RISC_V_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISC_V_core.tcl
+# Log file: D:/RV32IM/RV32IM.runs/synth_1/RISC_V_core.vds
+# Journal file: D:/RV32IM/RV32IM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RISC_V_core.tcl -notrace

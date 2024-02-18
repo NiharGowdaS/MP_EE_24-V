@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Feb 17 20:48:25 2024
+# Process ID: 16740
+# Current directory: D:/RV32IM/RV32IM.runs/blk_memory_synth_1
+# Command line: vivado.exe -log blk_memory.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_memory.tcl
+# Log file: D:/RV32IM/RV32IM.runs/blk_memory_synth_1/blk_memory.vds
+# Journal file: D:/RV32IM/RV32IM.runs/blk_memory_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_memory.tcl -notrace
