@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../ip/blk_memory/sim/blk_memory.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
