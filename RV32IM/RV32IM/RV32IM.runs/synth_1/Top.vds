@@ -1,0 +1,551 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Feb 17 20:26:34 2024
+# Process ID: 9348
+# Current directory: C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.runs/synth_1/Top.vds
+# Journal file: C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.runs/synth_1\vivado.jou
+# Running On: Shreeshiano, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 7905 MB
+#-----------------------------------------------------------
+source Top.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 471.543 ; gain = 199.930
+Command: synth_design -top Top -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12096
+INFO: [Synth 8-11241] undeclared symbol 'ZeroE', assumed default net type 'wire' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:32]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 910.242 ; gain = 413.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RISC_V_core' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Data_path' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/mux2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/mux2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/IF_ID.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/IF_ID.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/ID_EX.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/ID_EX.v:2]
+WARNING: [Synth 8-6104] Input port 'RdE' has an internal driver [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:49]
+WARNING: [Synth 8-6104] Input port 'Rs1E' has an internal driver [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:49]
+WARNING: [Synth 8-6104] Input port 'Rs2E' has an internal driver [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:49]
+WARNING: [Synth 8-6104] Input port 'Rs1D' has an internal driver [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:50]
+WARNING: [Synth 8-6104] Input port 'Rs2D' has an internal driver [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:51]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/EX_MEM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/EX_MEM.v:3]
+WARNING: [Synth 8-6104] Input port 'RdM' has an internal driver [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:54]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/MEM_WB.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/MEM_WB.v:2]
+WARNING: [Synth 8-6104] Input port 'RdW' has an internal driver [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:55]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/mux3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/mux3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/ALU.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/ALU.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/ALU.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Registers' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Registers.v:3]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Registers.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'Registers' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Registers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Extend.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Extend.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Data_path' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_path.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Control_path' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Control_path.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Instr_Decode' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v:51]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'Instr_Decode' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v:4]
+INFO: [Synth 8-6157] synthesizing module 'C_ID_EX' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_ID_EX.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'C_ID_EX' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_ID_EX.v:4]
+WARNING: [Synth 8-689] width (5) of port connection 'alu_control_D' does not match port width (4) of module 'C_ID_EX' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Control_path.v:42]
+WARNING: [Synth 8-689] width (5) of port connection 'alu_control_E' does not match port width (4) of module 'C_ID_EX' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Control_path.v:42]
+INFO: [Synth 8-6157] synthesizing module 'C_EX_MEM' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_EX_MEM.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'C_EX_MEM' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_EX_MEM.v:6]
+INFO: [Synth 8-6157] synthesizing module 'C_MEM_WB' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_MEM_WB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'C_MEM_WB' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/C_MEM_WB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Control_path' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Control_path.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_detection' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Hazard_detection.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_detection' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Hazard_detection.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RISC_V_core' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:3]
+WARNING: [Synth 8-567] referenced signal 'mem_data' should be on the sensitivity list [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (0#1) [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Top.v:3]
+WARNING: [Synth 8-3848] Net Rs1D in module/entity RISC_V_core does not have driver. [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:29]
+WARNING: [Synth 8-3848] Net Rs2D in module/entity RISC_V_core does not have driver. [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:29]
+WARNING: [Synth 8-3848] Net Rs1E in module/entity RISC_V_core does not have driver. [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:29]
+WARNING: [Synth 8-3848] Net Rs2E in module/entity RISC_V_core does not have driver. [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:29]
+WARNING: [Synth 8-3848] Net RdE in module/entity RISC_V_core does not have driver. [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:27]
+WARNING: [Synth 8-3848] Net RdM in module/entity RISC_V_core does not have driver. [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:27]
+WARNING: [Synth 8-3848] Net RdW in module/entity RISC_V_core does not have driver. [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/RISC_V_core.v:27]
+WARNING: [Synth 8-7129] Port PC[31] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[30] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[29] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[28] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[27] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[26] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[25] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[24] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[23] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[22] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[21] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[20] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[19] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[18] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[17] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[16] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[10] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[9] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[8] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[7] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[6] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[5] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs1D[4] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs1D[3] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs1D[2] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs1D[1] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs1D[0] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2D[4] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2D[3] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2D[2] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2D[1] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rs2D[0] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RdE[4] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RdE[3] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RdE[2] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RdE[1] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RdE[0] in module Hazard_detection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[6] in module Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[5] in module Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[4] in module Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[3] in module Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[2] in module Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[1] in module Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[0] in module Extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Registers is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1006.297 ; gain = 509.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1006.297 ; gain = 509.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1006.297 ; gain = 509.914
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+WARNING: [Synth 8-327] inferring latch for variable 'alu_result_reg' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/ALU.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_control_reg' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instr_Decode.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[31]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[30]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[29]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[28]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[26]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[25]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[24]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[23]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[22]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[21]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[18]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[17]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[14]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[13]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[12]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[10]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[9]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[7]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[6]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[5]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[2]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[1]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[0]' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Instruction_Memory.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1008.445 ; gain = 512.062
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 15    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 11    
+	  12 Input   32 Bit        Muxes := 1     
+	   8 Input    5 Bit        Muxes := 2     
+	   9 Input    5 Bit        Muxes := 1     
+	  18 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	  18 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 3     
+	  11 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP alu_result0, operation Mode is: A*B.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: Generating DSP alu_result0, operation Mode is: A*B.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: Generating DSP alu_result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+DSP Report: operator alu_result0 is absorbed into DSP alu_result0.
+INFO: [Synth 8-3971] The signal "Top/riscv/DATAPATH/REG/register_memory_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "Top/riscv/DATAPATH/REG/register_memory_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (riscv/CONTROLPATH/decoder/alu_control_reg[4]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (imem/memory_reg[1][2]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (imem/memory_reg[0][2]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (riscv/CONTROLPATH/decoder/alu_control_reg[3]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (riscv/CONTROLPATH/decoder/alu_control_reg[2]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (riscv/CONTROLPATH/decoder/alu_control_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (riscv/CONTROLPATH/decoder/alu_control_reg[0]) is unused and will be removed from module Top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1280.781 ; gain = 784.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 1280.781 ; gain = 784.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
+-------NONE-------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance riscv/DATAPATH/REG/register_memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance riscv/DATAPATH/REG/register_memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1280.781 ; gain = 784.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1280.781 ; gain = 784.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1280.781 ; gain = 784.398
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][31] with 1st driver pin 'dmem/mem_data_reg[31][31]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][31] with 2nd driver pin 'dmem/mem_data_reg[31][31]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][30] with 1st driver pin 'dmem/mem_data_reg[31][30]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][30] with 2nd driver pin 'dmem/mem_data_reg[31][30]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][29] with 1st driver pin 'dmem/mem_data_reg[31][29]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][29] with 2nd driver pin 'dmem/mem_data_reg[31][29]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][28] with 1st driver pin 'dmem/mem_data_reg[31][28]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][28] with 2nd driver pin 'dmem/mem_data_reg[31][28]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][27] with 1st driver pin 'dmem/mem_data_reg[31][27]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][27] with 2nd driver pin 'dmem/mem_data_reg[31][27]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][26] with 1st driver pin 'dmem/mem_data_reg[31][26]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][26] with 2nd driver pin 'dmem/mem_data_reg[31][26]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][25] with 1st driver pin 'dmem/mem_data_reg[31][25]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][25] with 2nd driver pin 'dmem/mem_data_reg[31][25]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][24] with 1st driver pin 'dmem/mem_data_reg[31][24]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][24] with 2nd driver pin 'dmem/mem_data_reg[31][24]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][23] with 1st driver pin 'dmem/mem_data_reg[31][23]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][23] with 2nd driver pin 'dmem/mem_data_reg[31][23]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][22] with 1st driver pin 'dmem/mem_data_reg[31][22]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][22] with 2nd driver pin 'dmem/mem_data_reg[31][22]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][21] with 1st driver pin 'dmem/mem_data_reg[31][21]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][21] with 2nd driver pin 'dmem/mem_data_reg[31][21]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][20] with 1st driver pin 'dmem/mem_data_reg[31][20]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][20] with 2nd driver pin 'dmem/mem_data_reg[31][20]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][19] with 1st driver pin 'dmem/mem_data_reg[31][19]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][19] with 2nd driver pin 'dmem/mem_data_reg[31][19]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][18] with 1st driver pin 'dmem/mem_data_reg[31][18]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][18] with 2nd driver pin 'dmem/mem_data_reg[31][18]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][17] with 1st driver pin 'dmem/mem_data_reg[31][17]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][17] with 2nd driver pin 'dmem/mem_data_reg[31][17]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][16] with 1st driver pin 'dmem/mem_data_reg[31][16]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][16] with 2nd driver pin 'dmem/mem_data_reg[31][16]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][15] with 1st driver pin 'dmem/mem_data_reg[31][15]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][15] with 2nd driver pin 'dmem/mem_data_reg[31][15]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][14] with 1st driver pin 'dmem/mem_data_reg[31][14]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][14] with 2nd driver pin 'dmem/mem_data_reg[31][14]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][13] with 1st driver pin 'dmem/mem_data_reg[31][13]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][13] with 2nd driver pin 'dmem/mem_data_reg[31][13]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][12] with 1st driver pin 'dmem/mem_data_reg[31][12]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][12] with 2nd driver pin 'dmem/mem_data_reg[31][12]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][11] with 1st driver pin 'dmem/mem_data_reg[31][11]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][11] with 2nd driver pin 'dmem/mem_data_reg[31][11]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][10] with 1st driver pin 'dmem/mem_data_reg[31][10]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][10] with 2nd driver pin 'dmem/mem_data_reg[31][10]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][9] with 1st driver pin 'dmem/mem_data_reg[31][9]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][9] with 2nd driver pin 'dmem/mem_data_reg[31][9]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][8] with 1st driver pin 'dmem/mem_data_reg[31][8]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][8] with 2nd driver pin 'dmem/mem_data_reg[31][8]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][7] with 1st driver pin 'dmem/mem_data_reg[31][7]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][7] with 2nd driver pin 'dmem/mem_data_reg[31][7]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][6] with 1st driver pin 'dmem/mem_data_reg[31][6]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][6] with 2nd driver pin 'dmem/mem_data_reg[31][6]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][5] with 1st driver pin 'dmem/mem_data_reg[31][5]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][5] with 2nd driver pin 'dmem/mem_data_reg[31][5]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][4] with 1st driver pin 'dmem/mem_data_reg[31][4]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][4] with 2nd driver pin 'dmem/mem_data_reg[31][4]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][3] with 1st driver pin 'dmem/mem_data_reg[31][3]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][3] with 2nd driver pin 'dmem/mem_data_reg[31][3]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][2] with 1st driver pin 'dmem/mem_data_reg[31][2]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][2] with 2nd driver pin 'dmem/mem_data_reg[31][2]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][1] with 1st driver pin 'dmem/mem_data_reg[31][1]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][1] with 2nd driver pin 'dmem/mem_data_reg[31][1]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][0] with 1st driver pin 'dmem/mem_data_reg[31][0]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[31][0] with 2nd driver pin 'dmem/mem_data_reg[31][0]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][31] with 1st driver pin 'dmem/mem_data_reg[30][31]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][31] with 2nd driver pin 'dmem/mem_data_reg[30][31]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][30] with 1st driver pin 'dmem/mem_data_reg[30][30]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][30] with 2nd driver pin 'dmem/mem_data_reg[30][30]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][29] with 1st driver pin 'dmem/mem_data_reg[30][29]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][29] with 2nd driver pin 'dmem/mem_data_reg[30][29]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][28] with 1st driver pin 'dmem/mem_data_reg[30][28]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][28] with 2nd driver pin 'dmem/mem_data_reg[30][28]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][27] with 1st driver pin 'dmem/mem_data_reg[30][27]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][27] with 2nd driver pin 'dmem/mem_data_reg[30][27]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][26] with 1st driver pin 'dmem/mem_data_reg[30][26]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][26] with 2nd driver pin 'dmem/mem_data_reg[30][26]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][25] with 1st driver pin 'dmem/mem_data_reg[30][25]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][25] with 2nd driver pin 'dmem/mem_data_reg[30][25]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][24] with 1st driver pin 'dmem/mem_data_reg[30][24]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][24] with 2nd driver pin 'dmem/mem_data_reg[30][24]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][23] with 1st driver pin 'dmem/mem_data_reg[30][23]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][23] with 2nd driver pin 'dmem/mem_data_reg[30][23]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][22] with 1st driver pin 'dmem/mem_data_reg[30][22]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][22] with 2nd driver pin 'dmem/mem_data_reg[30][22]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][21] with 1st driver pin 'dmem/mem_data_reg[30][21]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][21] with 2nd driver pin 'dmem/mem_data_reg[30][21]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][20] with 1st driver pin 'dmem/mem_data_reg[30][20]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][20] with 2nd driver pin 'dmem/mem_data_reg[30][20]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][19] with 1st driver pin 'dmem/mem_data_reg[30][19]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][19] with 2nd driver pin 'dmem/mem_data_reg[30][19]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][18] with 1st driver pin 'dmem/mem_data_reg[30][18]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][18] with 2nd driver pin 'dmem/mem_data_reg[30][18]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][17] with 1st driver pin 'dmem/mem_data_reg[30][17]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][17] with 2nd driver pin 'dmem/mem_data_reg[30][17]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][16] with 1st driver pin 'dmem/mem_data_reg[30][16]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][16] with 2nd driver pin 'dmem/mem_data_reg[30][16]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][15] with 1st driver pin 'dmem/mem_data_reg[30][15]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][15] with 2nd driver pin 'dmem/mem_data_reg[30][15]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][14] with 1st driver pin 'dmem/mem_data_reg[30][14]__0/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmem/mem_data[30][14] with 2nd driver pin 'dmem/mem_data_reg[30][14]/Q' [C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.srcs/sources_1/imports/RV32I/Data_Memory.v:57]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|     1024|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1280.781 ; gain = 784.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1280.781 ; gain = 784.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1280.781 ; gain = 784.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1280.781 ; gain = 784.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Top         | riscv/DATAPATH/pipereg3/PCPlus4W_reg[31] | 4      | 32    | YES          | NO                 | YES               | 32     | 0       | 
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B          | 15     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN>>17+A*B | 30     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |   616|
+|3     |DSP48E1  |     3|
+|4     |LUT1     |   126|
+|5     |LUT2     |   265|
+|6     |LUT3     |  2103|
+|7     |LUT4     |   123|
+|8     |LUT5     |   213|
+|9     |LUT6     |   595|
+|10    |MUXF7    |   140|
+|11    |RAMB18E1 |     2|
+|12    |SRL16E   |    32|
+|13    |FDCE     |   299|
+|14    |FDRE     |  2084|
+|15    |LD       |    32|
+|16    |IBUF     |     2|
+|17    |OBUF     |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+-------------+------+
+|      |Instance        |Module       |Cells |
++------+----------------+-------------+------+
+|1     |top             |             |  6639|
+|2     |  dmem          |Data_Memory  |  2048|
+|3     |  riscv         |RISC_V_core  |  4584|
+|4     |    CONTROLPATH |Control_path |   155|
+|5     |      c_pipreg0 |C_ID_EX      |   107|
+|6     |      c_pipreg1 |C_EX_MEM     |     4|
+|7     |      c_pipreg2 |C_MEM_WB     |     3|
+|8     |    DATAPATH    |Data_path    |  4429|
+|9     |      REG       |Registers    |    27|
+|10    |      alu_logic |ALU          |  2932|
+|11    |      pipereg0  |IF_ID        |    83|
+|12    |      pipereg2  |EX_MEM       |   615|
+|13    |      pipereg3  |MEM_WB       |   332|
+|14    |      pipreg1   |ID_EX        |   396|
++------+----------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1280.781 ; gain = 784.398
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2048 critical warnings and 101 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1280.781 ; gain = 784.398
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1280.781 ; gain = 784.398
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1292.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 793 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1321.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+Synth Design complete | Checksum: 53e732ea
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:59 . Memory (MB): peak = 1321.344 ; gain = 849.801
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Shreesh Kulkarni/Downloads/RV32IM/RV32IM/RV32IM.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 17 20:27:44 2024...
